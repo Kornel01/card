@@ -1,6 +1,16 @@
-.container{
+.container {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 8fr;
+    grid-template-areas: 
+    "a a"
+    "b b"
+    "c c";
+}
+.produkty {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    grid-area: b;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -29,4 +39,12 @@
   
   .card button:hover {
     opacity: 0.7;
+  }
+  .header {
+      grid-area: a;
+      background: wheat
+  }
+  .footer {
+      grid-area: c;
+      background: wheat;
   }
