@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
     grid-template-columns: 1fr 8fr;
     grid-template-areas: 
     "a a"
@@ -14,12 +14,15 @@
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
     text-align: center;
     font-family: arial;
   }
-  
+  p{
+      margin: 40px;
+  }
+
   .price {
     color: grey;
     font-size: 22px;
@@ -48,3 +51,16 @@
       grid-area: c;
       background: wheat;
   }
+
+  img {
+    transition-duration: 3s;
+    margin: 0 auto;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    z-index: 0;
+}
