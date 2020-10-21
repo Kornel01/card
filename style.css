@@ -45,7 +45,7 @@
   }
   .header {
       grid-area: a;
-      background: wheat
+      background: wheat;
   }
   .footer {
       grid-area: c;
@@ -66,4 +66,5 @@ img:hover {
     -moz-transform: scale(1.1);
     z-index: 0;
     -webkit-filter: saturate(140%);
+
 }
